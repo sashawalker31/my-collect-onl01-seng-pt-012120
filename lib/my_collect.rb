@@ -1,8 +1,9 @@
 def my_collect(empty_array)
-  if my_collect(languages) do |language|
-    language. << yield (languages[i])
-  
-  elsif my_collect(students) do |student|
-    student.split(" ").first
+  i = 0
+  collect = []
+  while i < array.length
+    collect << yield(array[i])
+    i+=1
   end
+  collect
 end
